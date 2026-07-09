@@ -310,10 +310,22 @@ header {
     flex: 1;
 }
 
-.child_projet button {
+.child_projet button  {
     align-self: start;
     border: none;
     border-radius: 999px;
+    padding: 12px 24px;
+    background: var(--accent);
+    
+    color: var(--surface);
+    font-weight: 600;
+    cursor: pointer;
+}
+.mbtn {
+    align-self: start;
+    border: none;
+    border-radius: 999px;
+    text-decoration: none;
     padding: 12px 24px;
     background: var(--accent);
     color: var(--surface);
@@ -564,4 +576,66 @@ footer p {
         grid-template-columns: 1fr;
         gap: 8px;
     }
+}
+
+
+#mission-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: ;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+#mission-card header {
+    z-index: 1;
+}
+.mission{
+    margin-top: 60px;
+}
+
+.mission-card{
+    min-width: 250px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 30px;
+}
+
+.mission-card img{
+    width: 100%;
+    height: auto;
+}
+
+.mission-card-content{
+    padding: 10px;
+}
+
+.mission-card-content h3{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.mission-card-content p {
+    text-align: justify;
+    line-height: 1.5;
+}
+.mission-card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mission-card-footer a{
+    background: var(--accent);
+    box-shadow: none;
+}
+
+.mission-card-footer a:hover{
+    background: var(--accent);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.5);
+
 }
