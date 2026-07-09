@@ -11,5 +11,60 @@
 </head>
 <body>
     <h1>hello</h1>
+    <section id="contact-don" class="contact-don">
+        <h2>Contactez-nous &amp; Faites un don</h2>
+        <p class="subtitle">Votre soutien fait la différence dans notre mission</p>
+        <address class="contact-adress">
+            <p><a href="mailto:associationpapyrus@gmail.com">associationpapyrus@gmail.com</a></p>
+            <p>+242 06 115 15 15</p>
+            <p>23e étgage Tours Business (Tours jumelles Mpila)</p>
+        </address>
+        <form action="#" method="get" class="contact-form">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <div class="form-group">
+                    <label for="nom">Nom complet <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
+                    <input type="text" id="nom" name="nom" required aria-describedby="nom-help">
+                    <small id="nom-help">Votre nom tel que écrit sur votre pièce d'identité</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Entrez votre numéro de téléphone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option value="info">Demande d'information</option>
+                        <option value="don" selected>Faire un don</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-groupe">
+                    <label for="message">Message <span class=required>*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>   
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Montant du don</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="montant" value="10000"> 10 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="20000"> 20 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="50000"> 50 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="100000"> 100 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="autre"> Autre montant</label>
+                </div>
+            </fieldset>
+            <button type="submit" name="submit" class="btn-submit">Envoyer mon message</button>
+            <p class="required-note"><span class="required">*</span> Champs obligatoires</p>
+        </form>
+    </section>
 </body>
 </html>
