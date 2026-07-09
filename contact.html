@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>associatif / ONG </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- En tete-->  
+     <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="image/logo1.png" alt="Logo de l'ONG" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="">Nos missions</a></li>
+                <li><a href="/projet.html">Nos Projets</a></li>
+                <li><a href="/evenement.html">Evènement à venir</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="contact-don" class="contact-don">
+        <h2>Contactez-nous &amp; Faites un don</h2>
+        <p class="subtitle">Votre soutien fait la différence dans notre mission</p>
+        <address class="contact-adress">
+            
+        </address>
+        <form action="#" method="get" class="contact-form">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <div class="form-group">
+                    <label for="nom">Nom complet <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
+                    <small id="nom-help">Votre nom tel que écrit sur votre pièce d'identité</small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Entrez votre numéro de téléphone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option value="info">Demande d'information</option>
+                        <option value="don" selected>Faire un don</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-groupe">
+                    <label for="message">Message <span class=required>*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>   
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Montant du don</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="montant" value="10000"> 10 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="20000"> 20 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="50000"> 50 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="100000"> 100 000 Fcfa</label>
+                    <label><input type="radio" name="montant" value="autre"> Autre montant</label>
+                </div>
+            </fieldset>
+            <button type="submit" name="submit" class="btn-submit">Envoyer mon message</button>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>Email : associationpapyrus@gmail.com | </a></p>
+        <p> Tel : +242 06 115 15 15 |</p>
+        <p> 23e étgage Tours Business-Mpila | </p>
+        <p>&copy; 2026 ONG. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
